@@ -1,0 +1,49 @@
+.logo {
+    width: 5em;
+    display: block;
+    margin: 30px auto;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(45, 69, 84);
+}
+
+.char {
+    color: rgb(45, 69, 84);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.13px;
+    margin-bottom: 30px;
+}
+
+.typeimg { 
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    max-height: 216px;
+}
+
+.chooseTitle {
+    color: rgb(45, 69, 84);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.13px;
+    margin-bottom: 6px;
+}
+
+p {
+    color: rgb(45, 69, 84);
+}
+
+a {
+   border: 1px solid transparent; 
+}
+
+a:hover {
+    border: 1px solid #1e5fbf;
+}
