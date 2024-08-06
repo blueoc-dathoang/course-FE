@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Top Hat | Dynamic Courseware Platform</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://tophat.com/wp-content/themes/TOPHAT01/build/images/favicons/favicon_27dcef69.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://tophat.com/wp-content/themes/TOPHAT01/build/images/favicons/apple-touch-icon_4e181b57.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://tophat.com/wp-content/themes/TOPHAT01/build/images/favicons/favicon-32x32_8addb980.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://tophat.com/wp-content/themes/TOPHAT01/build/images/favicons/favicon-16x16_d9c67cd9.png"
+    />
+    <link
+      rel="mask-icon"
+      href="https://tophat.com/wp-content/themes/TOPHAT01/build/images/favicons/safari-pinned-tab_d93f25da.svg"
+      color="#934af4"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://tophat.com/wp-content/themes/TOPHAT01/build/css/main.css?ver=1721802861"
+    />
+
+    <link
+      rel="preload"
+      href="https://kit.fontawesome.com/a3d76e49a9.js"
+      as="script"
+    />
+
+    <!-- Font Awesome Pro Kit -->
+    <script src="https://kit.fontawesome.com/a3d76e49a9.js" defer></script>
+
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <meta
+      name="description"
+      content="Create custom questions, videos, images &amp; GIFs in homework assignments for students with Top Hat&#039;s engagement platform designed to motivate your class."
+    />
+    <link rel="canonical" href="https://tophat.com/" />
+
+    <link
+      rel="stylesheet"
+      id="editor_plus-plugin-frontend-style-css"
+      href="https://tophat.com/wp-content/plugins/editorplus/dist/style-gutenberg-frontend-style.css?ver=66a0a06d03cbc"
+      type="text/css"
+      media=""
+    />
+
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="https://tophat.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.5"
+      type="text/css"
+      media="all"
+    />
+
+    <link rel="https://api.w.org/" href="https://tophat.com/wp-json/" />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://tophat.com/wp-json/wp/v2/pages/16429"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://tophat.com/xmlrpc.php?rsd"
+    />
+    <link rel="shortlink" href="https://tophat.com/" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://tophat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftophat.com%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="https://tophat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftophat.com%2F&#038;format=xml"
+    />
+    <link
+      rel="icon"
+      href="https://tophat.com/wp-content/uploads/2017/05/tophat-150x150.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://tophat.com/wp-content/uploads/2017/05/tophat-300x300.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://tophat.com/wp-content/uploads/2017/05/tophat-300x300.png"
+    />
+  </head>
+
+  <body
+    class="home page-template-default page page-id-16429 promo-banner-active eplus_styles"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+<script
+  type="text/javascript"
+  src="https://tophat.com/wp-content/themes/TOPHAT01/build/js/interactive/animate-in.js"
+></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    const prev = document.getElementById("sliderPrev");
+    const next = document.getElementById("sliderNext");
+    const boxes = document.getElementsByClassName("educators__box");
+    let currStep = 1;
+
+    const carouselSlide = (boxes, currStep) => {
+      document.getElementById("current").innerHTML = "0" + currStep;
+      boxes.forEach((box) => {
+        if (box.id.includes(currStep)) {
+          box.style.display = "flex";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    };
+    prev.addEventListener("click", () => {
+      if (currStep > 1) {
+        currStep--;
+        carouselSlide(boxes, currStep);
+      }
+    });
+    next.addEventListener("click", () => {
+      if (currStep < 3) {
+        currStep++;
+        carouselSlide(boxes, currStep);
+      }
+    });
+  });
+</script>
