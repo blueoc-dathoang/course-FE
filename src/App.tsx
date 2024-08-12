@@ -1,16 +1,16 @@
-import './App.css'
+import { lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import RegisterPage from './pages/RegisterPage'
 
+const HomePage = lazy(() => import('./pages/HomePage'))
+const RegisterPage = lazy(() => import('./pages/Register/Register'))
 
 function App() {
   return (
-    <div className='App'>
+    <div>
       <Router>
         <Routes>
           <Route element={<HomePage/>} path=''></Route>
-          <Route element={<RegisterPage></RegisterPage>} path='/register'>
+          <Route element={<RegisterPage/>} path='/register'>
             <Route path='teacher'></Route>
           </Route>
         </Routes>

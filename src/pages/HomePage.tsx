@@ -1,24 +1,6 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-import React from "react";
-
 const HomePage = () => {
   return (
     <>
-      {/* Google Tag Manager (noscript) */}
-      <noscript>
-        &lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WH54DX"
-        height="0" width="0" style="display:none;visibility:hidden"
-        title="Google Tag Manager"&gt;&lt;/iframe&gt;
-      </noscript>
-      {/* End Google Tag Manager (noscript) */}
-      {/* GA Connector */}
       <header role="none" className="main header-global ">
         <div
           id="promo-banner"
